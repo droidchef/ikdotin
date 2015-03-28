@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<!--[if !IE]><!--> <html lang="en" ng-app="root"> <!--<![endif]-->
 <head>
     <title>Ishan Khanna | Android & Web Developer </title>
     <!-- Meta -->
@@ -29,10 +29,12 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+
+
 </head> 
 
 <body>
+
     <!-- ******HEADER****** --> 
     <header class="header">
         <div class="container">                       
@@ -424,16 +426,14 @@
                     </div><!--//section-inner-->
                 </aside><!--//section-->
 
-                <aside class="list conferences aside section">
+                <aside class="list talks aside section">
                     <div class="section-inner">
                         <h2 class="heading">My Talks</h2>
-                        <div class="content">
+                        <div class="content" data-ng-controller="talksCtrl">
                             <ul class="list-unstyled">
-                                <li><i class="fa fa-calendar"></i> <a href="#" target="_blank">OSDC 2014</a> JIIT (Noida)</li>
-                                <li><i class="fa fa-calendar"></i> <a href="#">GSOC Meetup 2014</a> JMI (Delhi)</li>
-                                <li><i class="fa fa-calendar"></i> <a href="#">FOSS Head Start</a> BPIT (Delhi)</li>
-                                <li><i class="fa fa-calendar"></i> <a href="#">GSOC Meetup 2015</a> DTU (Delhi)</li>
-                                <li><i class="fa fa-calendar"></i> <a href="#">Solving Myths of FOSS</a> MSIT (Delhi)</li>
+                                <li ng-repeat="talk in talks">
+                                    <i class="fa fa-calendar"></i>{{talk.name + ' ' + talk.year + ' ' + talk.where + ' ('+ talk.city + ')' }}
+                                </li>
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -459,7 +459,9 @@
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
     <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
     <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="app/scripts/root.js"></script>
 </body>
 </html> 
 
