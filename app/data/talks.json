@@ -1,0 +1,32 @@
+[
+    {
+        "name": "OSDC",
+        "year": 2014,
+        "where": "JIIT",
+        "city": "Noida"
+    },
+    {
+        "name": "GSOC Meetup",
+        "year": 2014,
+        "where": "JMI",
+        "city": "Delhi"
+    },
+    {
+        "name": "FOSS Starter",
+        "year": 2014,
+        "where": "BPIT",
+        "city": "Delhi"
+    },
+    {
+        "name": "GSOC Meetup",
+        "year": 2015,
+        "where": "DTU",
+        "city": "Delhi"
+    },
+    {
+        "name": "Solving Myths of FOSS",
+        "year": 2015,
+        "where": "MSIT",
+        "city": "Delhi"
+    }
+]
