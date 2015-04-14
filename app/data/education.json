@@ -1,0 +1,34 @@
+[
+    {
+        "courseName": "B.Tech (Information Technology)",
+        "university":"IP University",
+        "place":"Delhi",
+        "yearStarted": "2012",
+        "yearGraduated": "2016",
+        "pursuing": true
+    },
+    {
+        "courseName": "Senior Secondary School",
+        "university":"Lancer's Convent",
+        "place":"Delhi",
+        "yearStarted": "2010",
+        "yearGraduated": "2012",
+        "pursuing": false
+    },
+    {
+        "courseName": "Secondary School",
+        "university":"Lancer's Convent",
+        "place":"Delhi",
+        "yearStarted": "2006",
+        "yearGraduated": "2010",
+        "pursuing": false
+    },
+    {
+        "courseName": "Primary School",
+        "university":"Lancer's Convent",
+        "place":"Delhi",
+        "yearStarted": "2000",
+        "yearGraduated": "2006",
+        "pursuing": false
+    }
+]
