@@ -39,3 +39,12 @@ app.controller("educationCtrl", function($scope, $http) {
             $scope.educationData = response;
         });
 });
+
+// Controller for Experiences Section
+app.controller("experiencesCtrl", function($scope, $http) {
+   $http.get("./app/data/experiences.json")
+       .success(function(response){
+          $scope.experiences = response;
+       });
+
+});

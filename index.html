@@ -156,96 +156,17 @@
                 <section class="experience section">
                     <div class="section-inner">
                         <h2 class="heading">Work Experience</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">Product Specialist - <span class="place"><a href="http://www.seeksherpa.com">SeekSherpa</a></span> <span class="year">(September 2014 - Present)</span></h3>
-                                <p>
-                                    <ul>
-                                        <li>Strategising Technical Operations and Product Development.</li>
-                                        <li>Development of Android Application</li>
-                                        <li>Development of Web Application</li>
-                                        <li>Talent Acquisition - Technology</li>
-                                        <li>Automating tasks using Python and Shell Scripting (Like Image Compression, Image Format Conversion, Image Thumbnail Generation)</li>
-                                        <li>Development of a New Robust Restful Web API using Laravel Framework for PHP. This would enable a seamless experience of SeekSherpa across iOS, Android and Web.</li>
-                                    </ul>
+                        <div class="content" data-ng-controller="experiencesCtrl">
+
+                            <div class="item" data-ng-repeat="experience in experiences">
+                                <h3 class="title">{{ experience.position }} - <span class="place"><a href="{{experience.organisationUrl}}">{{experience.organisation}}</a></span> <span class="year">({{ experience.from }} - {{experience.isCurrent ? 'Present' : experience.to}})</span></h3>
+                                <p>{{ experience.summary }}
+                                <ul data-ng-repeat="description in experience.descriptions">
+                                    <li>{{description}}</li>
+                                </ul>
                                 </p>
                             </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Open Source Android Developer - <span class="place"><a href="#">Mifos Initiative</a></span> <span class="year">(April 2014 - Present)</span></h3>
-                                <p>
-                                    <ul>
-                                        <li>Working as an Open Source Contributor to the Mifos Community</li>
-                                        <li>Mostly fixing bugs, doing improvements around the functionality in place</li>
-                                        <li>Writing Instrumentation and Unit Tests</li>
-                                        <li>Reviewing code submitted by other contributors</li>
-                                        <li>Building new features along with other senior developers of the community.</li>
-                                        <li>Managing release cycles</li>
-                                    </ul>
-                                </p>
-                            </div><!--//item-->
-                            
-                            <div class="item">
-                                <h3 class="title">Mentor @ Google Code In - <span class="place"><a href="#">Mifos Initiative</a></span> <span class="year">(December 2014 - January 2015)</span></h3>
-                                <p>
-                                    Google Code-in (GCI) is a contest for pre-university students (e.g., high school and secondary school students) with the goal of encouraging young people to participate in open source. We work with open source organizations, each of whom will provide a list of tasks to be completed by student contestants. Tasks can be anything an organization needs help with, from bug fixes, to writing code, to user experience research, to writing documentation. The contest takes place entirely online.
-
-                                    As a mentor my responsibilities were :
-                                    <ul>
-                                        <li>To create Tasks with varying difficulty for students across the globe.</li>
-                                        <li>To answer queries of students related to the tasks they claim.</li>
-                                        <li>To review the Pull Requests and the Code submitted by the students.</li>
-                                        <li>To guide them on various topics that block a them while performing a task.</li>
-                                    </ul>
-                                </p>
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="title">Technology Evangelist - <span class="place"><a href="#">SeekSherpa</a></span> <span class="year">(June 2014 - August 2014)</span></h3>
-                                <p>
-                                    As a Tech Evangelist I spruced up the Android Application called SeekSherpa.
-                                    <ul>
-                                        <li>Improved UI/UX of the application.</li>
-                                        <li>Worked along with the Co-Founders to innovate the shortest paths to get things done on the app in order to increase user experience there by growing user retention and acquisition rates.</li>
-                                        <li>Implemented complex Designs with the help of Open Source Third Party Libraries.</li>
-                                        <li>Implemented Image Caching to improve memory and bandwidth consumption.</li>
-                                        <li>Developed a few new features after taking inspiration from apps like Facebook and AirBnb</li>
-                                        <li>Bootstrapped the Web-App of Seeksherpa, that'll enable users to browse through the experiences and book them online from the browser</li>
-                                    </ul>
-                                </p>
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="title">Google Summer of Code 2014 Intern - <span class="place"><a href="#">Mifos Initiative</a></span> <span class="year">(April 2014 - August 2014)</span></h3>
-                                <p>
-                                    Developed an Open Source Android Application that implements an already existing REST based Mifos API. The project was aimed :-
-                                    <ul>
-                                        <li>To enable field officers to interact with Client Data from a Handheld Device(Mobile/Tablet) running Android OS.</li>
-                                        <li>To enable field officers to interact with Collection Sheets using the app.</li>
-                                        <li>To enable field officers to work with the app without network connectivity.</li>
-                                        <li>Worked closely with mentors around the Globe (USA, Netherlands, Germany, India) - remotely. They had experience in varied domains such as Software Architecture, Software Development, Full Stack Development, Automation Testing etc.                                        </li>
-                                    </ul>
-                                </p>
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="title">Android Developer - <span class="place"><a href="#">News In Shorts</a></span> <span class="year">(August 2013 - December 2013)</span></h3>
-                                <p>
-                                    Developed the Android Application for this Startup. I was responsible for complete development on the Android Front. Working closely with the founders
-                                    implemented some challenging UI designs and animations for content consumption on the app with the help of Gestures. First project for a startup. Implemented
-                                    LRUImageCache for improved content delivery. Also integrated MIXPANEL analytics to understand user behavior. FACEBOOK API was integrated for sign up and login of users.
-                                </p>
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="title">Freelance Android Developer - <span class="place"><a href="#">Freelancer.com</a></span> <span class="year">(August 2012 - August 2013)</span></h3>
-                                <p>
-                                    As a freelancer I did over 20 Projects for Clients based out of USA, Sweden, UK and India. Got a chance to work on various SDKs like Flurry, Admob, Airpush,
-                                    Facebook API, Twitter API, Google Maps etc.
-                                </p>
-                            </div><!--//item-->
-
-
-                        </div><!--//content-->  
+                        </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
                 <section class="github section">
