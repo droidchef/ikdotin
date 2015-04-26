@@ -48,3 +48,12 @@ app.controller("experiencesCtrl", function($scope, $http) {
        });
 
 });
+
+// Controller for Projects Section
+app.controller("projectsCtrl", function($scope, $http) {
+    $http.get("./app/data/projects.json")
+        .success(function(response){
+            $scope.projects = response;
+        });
+
+});
