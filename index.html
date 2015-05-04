@@ -13,10 +13,10 @@
     <meta name="author" content="Ishan Khanna">    
     <link rel="shortcut icon" href="favicon.ico">  
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
     <!-- github acitivity css -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
@@ -24,6 +24,7 @@
     
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -57,198 +58,35 @@
     <div class="container sections-wrapper">
         <div class="row">
             <div class="primary col-md-8 col-sm-12 col-xs-12">
-                <section class="about section">
+                <section class="projects section wow slideInLeft">
                     <div class="section-inner">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>The toughest portion :D</p>
+                        <h2 class="heading">My Projects</h2>
+                        <div class="content" data-ng-controller="projectsCtrl">
+                            <div class="item" data-ng-repeat="project in projects | orderBy: '-id'">
+                                <h3 class="title"><a href="#">{{ project.title }}</a> <span class="label label-theme" data-ng-show="project.isOpenSource">Open Source</span></h3>
+                                <p class="summary">{{ project.summary }}</p>
+                            </div><!--//item-->
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
-    
-               <section class="latest section">
-                    <div class="section-inner">
-                        <h2 class="heading">Latest Projects</h2>
-                        <div class="content">    
-                                               
-                            <div class="item featured text-center">
-                                <h3 class="title"><a href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank">KickStarter - Potato Salad App</a></h3>
-                                <p class="summary">A mobile app to help you make delicious potato salad</p>
-                                <div class="featured-image">
-                                    <a href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank">
-                                    <img class="img-responsive project-image" src="assets/images/projects/project-featured.png" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                        <div class="text">App</div>
-                                        </div>
-                                    </div>
-                                    
-                                <div class="desc text-left">                                    
-                                    <p>You can promote your main project here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
-                                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. At vero eos et accusamus et iusto odio dignissimos ducimus.</p>
-                                </div><!--//desc-->         
-                                <a class="btn btn-cta-secondary" href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank"><i class="fa fa-thumbs-o-up"></i> Back my project</a>                 
-                            </div><!--//item-->
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/project-4.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/" target="_blank">Velocity - Designed for Products</a></h3>
-                                    <p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
-                                    <p><a class="more-link" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://wrapbootstrap.com/theme/tempo-designed-for-startups-WB07364T3?ref=3wm" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/project-1.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="https://wrapbootstrap.com/theme/tempo-designed-for-startups-WB07364T3?ref=3wm" target="_blank">Tempo - Designed for Startups</a></h3>
-                                    <p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
-                                    <p><a class="more-link" href="https://wrapbootstrap.com/theme/tempo-designed-for-startups-WB07364T3?ref=3wm" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/project-2.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank">Delta - Designed for Mobile Apps</a></h3>
-                                    <p> You can put one of your secondary projects here. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-                                    <p><a class="more-link" href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
                 
-                <section class="projects section">
-                    <div class="section-inner">
-                        <h2 class="heading">Other Projects</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><a href="#">Project Title Cras Lacus</a></h3>
-                                <p class="summary">Provide a brief description of your project. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatu.</p>
-                                <p><a class="more-link" href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a href="#">Project Title Cras eget lacus</a> <span class="label label-theme">Open Source</span></h3>
-                                <p class="summary">Provide a brief description of your project. Maecenas ornare ultricies risus, in fermentum augue consectetur in. Vestibulum vitae mauris iaculis, sollicitudin velit in, molestie nulla. </p>
-                                <p><a class="more-link" href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a href="#">Project Title Maecenas Ornare</a> <span class="label label-theme">Open Source</span></h3>
-                                <p class="summary">Provide a brief description of your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel purus enim. Etiam tortor felis, fermentum ac ultrices sed.</p>
-                                <p><a class="more-link" href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>
-                            </div><!--//item-->
-                            
-                            <a class="btn btn-cta-secondary" href="#">More on CoderWall <i class="fa fa-chevron-right"></i></a>
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-                
-                <section class="experience section">
+                <section class="experience section wow slideInLeft">
                     <div class="section-inner">
                         <h2 class="heading">Work Experience</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">Product Specialist - <span class="place"><a href="http://www.seeksherpa.com">SeekSherpa</a></span> <span class="year">(September 2014 - Present)</span></h3>
-                                <p>
-                                    <ul>
-                                        <li>Strategising Technical Operations and Product Development.</li>
-                                        <li>Development of Android Application</li>
-                                        <li>Development of Web Application</li>
-                                        <li>Talent Acquisition - Technology</li>
-                                        <li>Automating tasks using Python and Shell Scripting (Like Image Compression, Image Format Conversion, Image Thumbnail Generation)</li>
-                                        <li>Development of a New Robust Restful Web API using Laravel Framework for PHP. This would enable a seamless experience of SeekSherpa across iOS, Android and Web.</li>
-                                    </ul>
+                        <div class="content" data-ng-controller="experiencesCtrl">
+
+                            <div class="item" data-ng-repeat="experience in experiences">
+                                <h3 class="title">{{ experience.position }} - <span class="place"><a href="{{experience.organisationUrl}}">{{experience.organisation}}</a></span> <span class="year">({{ experience.from }} - {{experience.isCurrent ? 'Present' : experience.to}})</span></h3>
+                                <p>{{ experience.summary }}
+                                <ul data-ng-repeat="description in experience.descriptions">
+                                    <li>{{description}}</li>
+                                </ul>
                                 </p>
                             </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Open Source Android Developer - <span class="place"><a href="#">Mifos Initiative</a></span> <span class="year">(April 2014 - Present)</span></h3>
-                                <p>
-                                    <ul>
-                                        <li>Working as an Open Source Contributor to the Mifos Community</li>
-                                        <li>Mostly fixing bugs, doing improvements around the functionality in place</li>
-                                        <li>Writing Instrumentation and Unit Tests</li>
-                                        <li>Reviewing code submitted by other contributors</li>
-                                        <li>Building new features along with other senior developers of the community.</li>
-                                        <li>Managing release cycles</li>
-                                    </ul>
-                                </p>
-                            </div><!--//item-->
-                            
-                            <div class="item">
-                                <h3 class="title">Mentor @ Google Code In - <span class="place"><a href="#">Mifos Initiative</a></span> <span class="year">(December 2014 - January 2015)</span></h3>
-                                <p>
-                                    Google Code-in (GCI) is a contest for pre-university students (e.g., high school and secondary school students) with the goal of encouraging young people to participate in open source. We work with open source organizations, each of whom will provide a list of tasks to be completed by student contestants. Tasks can be anything an organization needs help with, from bug fixes, to writing code, to user experience research, to writing documentation. The contest takes place entirely online.
-
-                                    As a mentor my responsibilities were :
-                                    <ul>
-                                        <li>To create Tasks with varying difficulty for students across the globe.</li>
-                                        <li>To answer queries of students related to the tasks they claim.</li>
-                                        <li>To review the Pull Requests and the Code submitted by the students.</li>
-                                        <li>To guide them on various topics that block a them while performing a task.</li>
-                                    </ul>
-                                </p>
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="title">Technology Evangelist - <span class="place"><a href="#">SeekSherpa</a></span> <span class="year">(June 2014 - August 2014)</span></h3>
-                                <p>
-                                    As a Tech Evangelist I spruced up the Android Application called SeekSherpa.
-                                    <ul>
-                                        <li>Improved UI/UX of the application.</li>
-                                        <li>Worked along with the Co-Founders to innovate the shortest paths to get things done on the app in order to increase user experience there by growing user retention and acquisition rates.</li>
-                                        <li>Implemented complex Designs with the help of Open Source Third Party Libraries.</li>
-                                        <li>Implemented Image Caching to improve memory and bandwidth consumption.</li>
-                                        <li>Developed a few new features after taking inspiration from apps like Facebook and AirBnb</li>
-                                        <li>Bootstrapped the Web-App of Seeksherpa, that'll enable users to browse through the experiences and book them online from the browser</li>
-                                    </ul>
-                                </p>
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="title">Google Summer of Code 2014 Intern - <span class="place"><a href="#">Mifos Initiative</a></span> <span class="year">(April 2014 - August 2014)</span></h3>
-                                <p>
-                                    Developed an Open Source Android Application that implements an already existing REST based Mifos API. The project was aimed :-
-                                    <ul>
-                                        <li>To enable field officers to interact with Client Data from a Handheld Device(Mobile/Tablet) running Android OS.</li>
-                                        <li>To enable field officers to interact with Collection Sheets using the app.</li>
-                                        <li>To enable field officers to work with the app without network connectivity.</li>
-                                        <li>Worked closely with mentors around the Globe (USA, Netherlands, Germany, India) - remotely. They had experience in varied domains such as Software Architecture, Software Development, Full Stack Development, Automation Testing etc.                                        </li>
-                                    </ul>
-                                </p>
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="title">Android Developer - <span class="place"><a href="#">News In Shorts</a></span> <span class="year">(August 2013 - December 2013)</span></h3>
-                                <p>
-                                    Developed the Android Application for this Startup. I was responsible for complete development on the Android Front. Working closely with the founders
-                                    implemented some challenging UI designs and animations for content consumption on the app with the help of Gestures. First project for a startup. Implemented
-                                    LRUImageCache for improved content delivery. Also integrated MIXPANEL analytics to understand user behavior. FACEBOOK API was integrated for sign up and login of users.
-                                </p>
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="title">Freelance Android Developer - <span class="place"><a href="#">Freelancer.com</a></span> <span class="year">(August 2012 - August 2013)</span></h3>
-                                <p>
-                                    As a freelancer I did over 20 Projects for Clients based out of USA, Sweden, UK and India. Got a chance to work on various SDKs like Flurry, Admob, Airpush,
-                                    Facebook API, Twitter API, Google Maps etc.
-                                </p>
-                            </div><!--//item-->
-
-
-                        </div><!--//content-->  
+                        </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
-                <section class="github section">
+                <section class="github section wow slideInLeft">
                     <div class="section-inner">
                         <h2 class="heading">My GitHub</h2>
                         <p><a href="#"><img class="img-responsive" src="http://i.imgur.com/vjf7D4m.png" alt="GitHub Contributions Chart" /></a></p>
@@ -260,7 +98,7 @@
                 </section><!--//section-->
             </div><!--//primary-->
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
-                 <aside class="info aside section">
+                 <aside class="info aside section wow slideInRight">
                     <div class="section-inner">
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
@@ -277,7 +115,7 @@
                     </div><!--//section-inner-->                 
                 </aside><!--//aside-->
                 
-                <aside class="skills aside section">
+                <aside class="skills aside section wow slideInRight">
                     <div class="section-inner">
                         <h2 class="heading">Skills</h2>
                         <div class="content">
@@ -337,7 +175,7 @@
                     </div><!--//section-inner-->                 
                 </aside><!--//section-->
                 
-                <aside class="testimonials aside section">
+                <aside class="testimonials aside section wow slideInRight">
                     <div class="section-inner">
                         <h2 class="heading">Testimonials</h2>
                         <div class="content">
@@ -354,7 +192,7 @@
                     </div><!--//section-inner-->
                 </aside><!--//section-->
                 
-                <aside class="education aside section">
+                <aside class="education aside section wow slideInRight">
                     <div class="section-inner">
                         <h2 class="heading">Education</h2>
                         <div class="content" data-ng-controller="educationCtrl">
@@ -370,7 +208,7 @@
                     </div><!--//section-inner-->
                 </aside><!--//section-->
                             
-                <aside class="languages aside section">
+                <aside class="languages aside section wow slideInRight">
                     <div class="section-inner">
                         <h2 class="heading">Languages</h2>
                         <div class="content" data-ng-controller="languagesCtrl">
@@ -384,7 +222,7 @@
                     </div><!--//section-inner-->
                 </aside><!--//section-->
                 
-                <aside class="blog aside section">
+                <aside class="blog aside section wow slideInRight">
                     <div class="section-inner">
                         <h2 class="heading">Latest Blog Posts</h2>
                         <div id="rss-feeds" class="content">
@@ -393,7 +231,7 @@
                     </div><!--//section-inner-->
                 </aside><!--//section-->
                 
-                <aside class="list music aside section">
+                <aside class="list music aside section wow slideInRight">
                     <div class="section-inner">
                         <h2 class="heading">Favourite coding music</h2>
                         <div class="content" data-ng-controller="songsCtrl">
@@ -404,7 +242,7 @@
                     </div><!--//section-inner-->
                 </aside><!--//section-->
                 
-                <aside class="list conferences aside section">
+                <aside class="list conferences aside section wow slideInRight">
                     <div class="section-inner">
                         <h2 class="heading">Conferences</h2>
                         <div class="content" data-ng-controller="conferencesCtrl">
@@ -415,7 +253,7 @@
                     </div><!--//section-inner-->
                 </aside><!--//section-->
 
-                <aside class="list talks aside section">
+                <aside class="list talks aside section wow slideInRight">
                     <div class="section-inner">
                         <h2 class="heading">My Talks</h2>
                         <div class="content" data-ng-controller="talksCtrl">
@@ -443,7 +281,10 @@
     <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/wow.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+
     <!-- github activity plugin -->
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
     <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
@@ -451,6 +292,10 @@
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <script type="text/javascript" src="app/scripts/root.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html> 
 

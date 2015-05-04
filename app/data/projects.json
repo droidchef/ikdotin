@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "title": "EZ Charger",
+        "type": "Android Application",
+        "isOpenSource": false,
+        "thumbnailUrl":"",
+        "summary": "An application that allows you to charge your phone EZly",
+        "keywords": [
+        ],
+        "stack": [
+        ]
+    },
+    {
+        "id": 2,
+        "title": "News In Shorts",
+        "type": "Android Application",
+        "isOpenSource": false,
+        "thumbnailUrl":"",
+        "summary": "An app that provides crisp news stories in under 60 words.",
+        "keywords": [
+        ],
+        "stack": [
+        ]
+    },
+    {
+        "id": 3,
+        "title": "MifosX Android Client",
+        "type": "Android Application",
+        "isOpenSource": true,
+        "thumbnailUrl":"",
+        "summary": "A client for interacting with the MifosX Platform.",
+        "keywords": [
+        ],
+        "stack": [
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Pub Plug",
+        "type": "IntelliJ IDEA & Android Studio Plugin",
+        "isOpenSource": true,
+        "thumbnailUrl":"",
+        "summary": "A plugin that allows you to deploy your APK to Google Play Store from within the IDE",
+        "keywords": [
+        ],
+        "stack": [
+        ]
+    },
+    {
+        "id": 5,
+        "title": "RoboAlerts",
+        "type": "Android Application",
+        "isOpenSource": false,
+        "thumbnailUrl":"",
+        "summary": "An application that alerts you about latest stock prices changes.",
+        "keywords": [
+        ],
+        "stack": [
+        ]
+    },
+    {
+        "id": 6,
+        "title": "SeekSherpa v2",
+        "type": "Android Application",
+        "isOpenSource": false,
+        "thumbnailUrl":"",
+        "summary": "An android app connecting locals with travellers.",
+        "keywords": [
+        ],
+        "stack": [
+        ]
+    },
+    {
+        "id": 7,
+        "title": "SeekSherpa Web API",
+        "type": "Web Application",
+        "isOpenSource": false,
+        "thumbnailUrl":"",
+        "summary": "A web app for the SeekSherpa Platform that is integrated with Android and iOS apps.",
+        "keywords": [
+        ],
+        "stack": [
+        ]
+    }
+]

@@ -1,0 +1,132 @@
+[
+    {
+        "organisation": "SeekSherpa",
+        "position": "Product Specialist",
+        "logoURL": "",
+        "from": "September 2014",
+        "to": "",
+        "summary": "",
+        "isCurrent" : true,
+        "descriptions" : [
+            "Strategising Technical Operations and Product Development.",
+            "Development of Android Application",
+            "Development of Web Application",
+            "Talent Acquisition - Technology",
+            "Automating tasks using Python and Shell Scripting (Like Image Compression, Image Format Conversion, Image Thumbnail Generation)",
+            "Development of a New Robust Restful Web API using Laravel Framework for PHP. This would enable a seamless experience of SeekSherpa across iOS, Android and Web."
+        ],
+        "organisationUrl": "http://seeksherpa.com"
+    },
+    {
+        "organisation": "Mifos Initiative",
+        "position": "Open Source Android Developer",
+        "logoURL": "",
+        "from": "April 2014",
+        "to": "",
+        "summary": "",
+        "isCurrent" : true,
+        "descriptions" : [
+            "Working as an Open Source Contributor to the Mifos Community",
+            "Mostly fixing bugs, doing improvements around the functionality in place",
+            "Writing Instrumentation and Unit Tests",
+            "Reviewing code submitted by other contributors",
+            "Building new features along with other senior developers of the community.",
+            "Managing release cycles"
+        ],
+        "organisationUrl": "http://mifos.org/"
+    },
+    {
+        "organisation": "Mifos Initiative",
+        "position": "Mentor @ Google Code In",
+        "logoURL": "",
+        "from": "December 2014",
+        "to": "January 2015",
+        "isCurrent" : true,
+        "summary": "Google Code-in (GCI) is a contest for pre-university students (e.g., high school and secondary school students) with the goal of encouraging young people to participate in open source. We work with open source organizations, each of whom will provide a list of tasks to be completed by student contestants. Tasks can be anything an organization needs help with, from bug fixes, to writing code, to user experience research, to writing documentation. The contest takes place entirely online.The contest takes place entirely online. As a mentor my responsibilities were :",
+        "descriptions" : [
+            "To create Tasks with varying difficulty for students across the globe.",
+            "To answer queries of students related to the tasks they claim.",
+            "To review the Pull Requests and the Code submitted by the students.",
+            "To guide them on various topics that block a them while performing a task."
+        ],
+        "organisationUrl": "http://mifos.org/"
+    },
+    {
+        "organisation": "SeekSherpa",
+        "position": "Technology Evangelist",
+        "logoURL": "",
+        "from": "June 2014",
+        "to": "August 2014",
+        "summary": "As a Tech Evangelist I spruced up the Android Application called SeekSherpa v1",
+        "isCurrent" : true,
+        "descriptions" : [
+            "Improved UI/UX of the application.",
+            "Worked along with the Co-Founders to innovate the shortest paths to get things done on the app in order to increase user experience there by growing user retention and acquisition rates.",
+            "Implemented complex Designs with the help of Open Source Third Party Libraries.",
+            "Implemented Image Caching to improve memory and bandwidth consumption.",
+            "Developed a few new features after taking inspiration from apps like Facebook and AirBnb",
+            "Bootstrapped the Web-App of Seeksherpa, that'll enable users to browse through the experiences and book them online from the browser"
+        ],
+        "organisationUrl": "http://seeksherpa.com"
+    },
+    {
+        "organisation": " Mifos Initiative",
+        "position": "Google Summer of Code 2014 Intern",
+        "logoURL": "",
+        "from": "April 2014",
+        "to": "August 2014",
+        "summary": "Developed an Open Source Android Application that implements an already existing REST based Mifos API. The project was aimed :-",
+        "isCurrent" : true,
+        "descriptions" : [
+            "To enable field officers to interact with Client Data from a Handheld Device(Mobile/Tablet) running Android OS.",
+            "To enable field officers to interact with Collection Sheets using the app.",
+            "To enable field officers to work with the app without network connectivity.",
+            "Worked closely with mentors around the Globe (USA, Netherlands, Germany, India) - remotely. They had experience in varied domains such as Software Architecture, Software Development, Full Stack Development, Automation Testing etc."
+        ],
+        "organisationUrl": "http://mifos.org/"
+    },
+    {
+        "organisation": "Merits Capital Market Services Pvt. Ltd.",
+        "position": "Contract Android Developer",
+        "logoURL": "",
+        "from": "August 2013",
+        "to": "October 2013",
+        "summary": "Developed an Android Application called RoboAlerts. It is a high utility mobile application that signals automated alerts at every price move, in all chosen stocks or commodities.",
+        "isCurrent" : true,
+        "descriptions" : [
+            "Implemented different types of Notifications",
+            "Integrated TTS Engine to notify users about Stock names & prices without touching the phone.",
+            "Implemented Facebook like ChatHead Notifications in the app.",
+            "Implemented on-device notification caching using SQLite Databases"
+        ],
+        "organisationUrl": "http://www.merits.in/"
+    },
+    {
+        "organisation": "News In Shorts",
+        "position": "Android Developer",
+        "logoURL": "",
+        "from": "August 2013",
+        "to": "October 2013",
+        "summary": "Developed the Android Application for this Startup. I was responsible for complete development on the Android Front. Working closely with the founders implemented some challenging UI designs and animations for content consumption on the app with the help of Gestures. First project for a startup. Implemented LRUImageCache for improved content delivery. Also integrated MIXPANEL analytics to understand user behavior. FACEBOOK API was integrated for sign up and login of users.",
+        "isCurrent" : true,
+        "descriptions" : [
+
+        ],
+        "organisationUrl": "http://www.newsinshorts.com/"
+    },
+    {
+        "organisation": "Freelancer.com",
+        "position": "Freelance Android Developer",
+        "logoURL": "",
+        "from": "August 2012",
+        "to": "August 2013",
+        "summary": "As a freelancer I did over 20 Projects for Clients based out of USA, Sweden, UK and India. Got a chance to work on various SDKs like Flurry, Admob, Airpush, Facebook API, Twitter API, Google Maps etc.",
+        "isCurrent" : true,
+        "descriptions" : [
+
+        ],
+        "organisationUrl": "http://www.freelancer.com"
+    }
+
+
+]
