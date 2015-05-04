@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Java & Android",
+        "barLevel": 95,
+        "level": "Master"
+    },
+    {
+        "name": "PHP & Laravel",
+        "barLevel": 80,
+        "level": "Overlord"
+    },
+    {
+        "name": "Python & Django",
+        "barLevel": 60,
+        "level": "Good Enough"
+    },
+    {
+        "name": "HTMl, CSS, JS",
+        "barLevel": 60,
+        "level": "Good Enough"
+    },
+    {
+        "name": "Objective-C & iOS",
+        "barLevel": 40,
+        "level": "Getting There"
+    }
+]

@@ -57,3 +57,12 @@ app.controller("projectsCtrl", function($scope, $http) {
         });
 
 });
+
+// Controller for Skills Section
+app.controller("skillsCtrl", function($scope, $http) {
+    $http.get("./app/data/skills.json")
+        .success(function(response){
+            $scope.skills = response;
+        });
+
+});
