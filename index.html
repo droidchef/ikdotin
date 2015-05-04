@@ -118,56 +118,18 @@
                 <aside class="skills aside section wow slideInRight">
                     <div class="section-inner">
                         <h2 class="heading">Skills <span style="font-size: 0.6em;">to pay the bills</span></h2>
-                        <div class="content">
+                        <div class="content" data-ng-controller="skillsCtrl">
 
                             <div class="skillset">
 
-                                <div class="item">
-                                    <h3 class="level-title">Java & Android<span
-                                            class="level-label">Master</span></h3>
+                                <div class="item" data-ng-repeat="skill in skills">
+                                    <h3 class="level-title">{{ skill.name }}<span
+                                            class="level-label">{{ skill.level }}</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="95%">
+                                        <div class="level-bar-inner" data-level="{{ skill.barLevel }}%">
                                         </div>
                                     </div><!--//level-bar-->
                                 </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">PHP & Laravel<span
-                                        class="level-label">Overlord</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="80%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3<span
-                                        class="level-label">Good Enough</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="70%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Javascript & jQuery<span
-                                        class="level-label">Getting There</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="60%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-
-                                <div class="item">
-                                    <h3 class="level-title">Python & Django<span
-                                        class="level-label">Getting There</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="60%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-                                
                             </div>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -281,14 +243,13 @@
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
     <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
     <script type="text/javascript" src="assets/plugins/wow.min.js"></script>
-    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script type="text/javascript" src="assets/plugins/angular.min.js"></script>
 
     <!-- github activity plugin -->
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
     <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <script type="text/javascript" src="app/scripts/root.js"></script>
 
     <script>
