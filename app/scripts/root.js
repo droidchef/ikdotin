@@ -1,4 +1,4 @@
-var app = angular.module("root", []);
+var app = angular.module("root", ['truncate']);
 
 // Controller for My Talks Section
 app.controller("talksCtrl", function($scope, $http) {
@@ -64,5 +64,28 @@ app.controller("skillsCtrl", function($scope, $http) {
         .success(function(response){
             $scope.skills = response;
         });
+
+});
+
+app.controller("testimonialsCtrl", function($scope, $http) {
+   $http.get("./app/data/testimonials.json")
+       .success(function(response){
+            $scope.testimonials = response;
+            for(var i=0; i< $scope.testimonials.length; i++) {
+                $scope.testimonials[i].totalCharacters = $scope.testimonials[i].text.length;
+                $scope.testimonials[i].truncated = true;
+                $scope.testimonials[i].charactersToShow = 100;
+            }
+       });
+
+    $scope.showMore = function(testimonial) {
+        if (testimonial.truncated) {
+            testimonial.truncated = false;
+            testimonial.charactersToShow = testimonial.totalCharacters;
+        } else {
+            testimonial.truncated = true;
+            testimonial.charactersToShow = 100;
+        }
+    };
 
 });

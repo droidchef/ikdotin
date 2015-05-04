@@ -138,16 +138,13 @@
                 <aside class="testimonials aside section wow slideInRight">
                     <div class="section-inner">
                         <h2 class="heading">Testimonials</h2>
-                        <div class="content">
-                            <div class="item">
+                        <div class="content" data-ng-controller="testimonialsCtrl">
+                            <div class="item" data-ng-repeat="testimonial in testimonials" ng-init="testimonialIndex = $index">
                                 <blockquote class="quote">                                  
-                                    <p><i class="fa fa-quote-left"></i>James is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
+                                    <p id="testimonial-text"><i class="fa fa-quote-left"></i>{{ testimonial.text | characters: testimonial.charactersToShow }} <b><a ng-click='showMore(testimonial)'>{{ testimonial.truncated ? 'more' : 'less' }}</a></b></p>
                                 </blockquote>                
-                                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>                                                             
+                                <p class="source"><span class="name">{{ testimonial.writer.name }}</span><br /><span class="title"> {{ testimonial.writer.position + ' at ' + testimonial.writer.organization }}</span></p>
                             </div><!--//item-->
-                            
-                            <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Linkedin</a></p> 
-                            
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
@@ -250,6 +247,11 @@
     <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <!-- dependencies -->
+    <script type="text/javascript" src="app/scripts/truncate.js"></script>
+
+
     <script type="text/javascript" src="app/scripts/root.js"></script>
 
     <script>
