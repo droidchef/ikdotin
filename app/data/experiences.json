@@ -4,9 +4,9 @@
         "position": "Product Specialist",
         "logoURL": "",
         "from": "September 2014",
-        "to": "",
+        "to": "April 2015",
         "summary": "",
-        "isCurrent" : true,
+        "isCurrent" : false,
         "descriptions" : [
             "Strategising Technical Operations and Product Development.",
             "Development of Android Application",
@@ -41,7 +41,7 @@
         "logoURL": "",
         "from": "December 2014",
         "to": "January 2015",
-        "isCurrent" : true,
+        "isCurrent" : false,
         "summary": "Google Code-in (GCI) is a contest for pre-university students (e.g., high school and secondary school students) with the goal of encouraging young people to participate in open source. We work with open source organizations, each of whom will provide a list of tasks to be completed by student contestants. Tasks can be anything an organization needs help with, from bug fixes, to writing code, to user experience research, to writing documentation. The contest takes place entirely online.The contest takes place entirely online. As a mentor my responsibilities were :",
         "descriptions" : [
             "To create Tasks with varying difficulty for students across the globe.",
@@ -58,7 +58,7 @@
         "from": "June 2014",
         "to": "August 2014",
         "summary": "As a Tech Evangelist I spruced up the Android Application called SeekSherpa v1",
-        "isCurrent" : true,
+        "isCurrent" : false,
         "descriptions" : [
             "Improved UI/UX of the application.",
             "Worked along with the Co-Founders to innovate the shortest paths to get things done on the app in order to increase user experience there by growing user retention and acquisition rates.",
@@ -76,7 +76,7 @@
         "from": "April 2014",
         "to": "August 2014",
         "summary": "Developed an Open Source Android Application that implements an already existing REST based Mifos API. The project was aimed :-",
-        "isCurrent" : true,
+        "isCurrent" : false,
         "descriptions" : [
             "To enable field officers to interact with Client Data from a Handheld Device(Mobile/Tablet) running Android OS.",
             "To enable field officers to interact with Collection Sheets using the app.",
@@ -92,7 +92,7 @@
         "from": "August 2013",
         "to": "October 2013",
         "summary": "Developed an Android Application called RoboAlerts. It is a high utility mobile application that signals automated alerts at every price move, in all chosen stocks or commodities.",
-        "isCurrent" : true,
+        "isCurrent" : false,
         "descriptions" : [
             "Implemented different types of Notifications",
             "Integrated TTS Engine to notify users about Stock names & prices without touching the phone.",
@@ -108,7 +108,7 @@
         "from": "August 2013",
         "to": "October 2013",
         "summary": "Developed the Android Application for this Startup. I was responsible for complete development on the Android Front. Working closely with the founders implemented some challenging UI designs and animations for content consumption on the app with the help of Gestures. First project for a startup. Implemented LRUImageCache for improved content delivery. Also integrated MIXPANEL analytics to understand user behavior. FACEBOOK API was integrated for sign up and login of users.",
-        "isCurrent" : true,
+        "isCurrent" : false,
         "descriptions" : [
 
         ],
@@ -121,7 +121,7 @@
         "from": "August 2012",
         "to": "August 2013",
         "summary": "As a freelancer I did over 20 Projects for Clients based out of USA, Sweden, UK and India. Got a chance to work on various SDKs like Flurry, Admob, Airpush, Facebook API, Twitter API, Google Maps etc.",
-        "isCurrent" : true,
+        "isCurrent" : false,
         "descriptions" : [
 
         ],
